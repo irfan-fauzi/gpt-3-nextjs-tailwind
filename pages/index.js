@@ -1,5 +1,4 @@
-import { Header, Hero } from "../sections/page-index";
-
+import { Header, Hero } from "../components/sections/page-index";
 
 
 export default function Home() {
@@ -8,6 +7,7 @@ export default function Home() {
     <div className='bg-gradient min-h-screen'>
       <Header />
       <Hero />
+     
     </div>
   )
 }

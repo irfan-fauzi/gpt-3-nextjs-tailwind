@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '../../../components'
+import { Navbar } from '../../../atomic/index'
 
 const Header = () => {
   return (
