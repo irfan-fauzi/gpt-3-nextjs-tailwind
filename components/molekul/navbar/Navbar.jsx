@@ -1,22 +1,8 @@
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import { useState, useEffect } from 'react'
+import MenuDropDown from './Dropdown'
 
-const MenuDropDown = ({menus}) => {
-  return (
-  <div className='absolute top-20 right-0 lg:hidden text-white border z-10'>
-    <ul>
-      {menus.map(el => (
-          <li key={el.text}><a href={el.url}>{el.text}</a></li>
-      ))}
-    </ul>
-    <button className='bg-gray-300'>sign in</button>
-    <button className='bg-red-300'>sign up</button>
-  </div>
-  )
-}
-
-const Navbar = () => {
-  
+const Navbar = () => {  
   const [showMenu, setShowMenu] = useState(false)
   useEffect(() => {
     setShowMenu(!false)
@@ -36,12 +22,7 @@ const Navbar = () => {
               <h1 className="text-2xl font-bold text-gray-400">GPT-3</h1>
             </div>
             <div className="w-7/12 ">
-              {
-                !showMenu && (
-                  <MenuDropDown menus={contentMenu}/>
-                )
-              }
-            
+              {!showMenu && (<MenuDropDown menus={contentMenu}/>)}
             <ul className="lg:flex text-gray-300 hidden">
               {contentMenu.map(el => (
                   <li key={el.text}><a href={el.url} className="hover:text-red-300 transition px-6 py-3 font-light">{el.text}</a></li>
