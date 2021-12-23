@@ -1,82 +1,58 @@
-import Head from 'next/head'
+import { Navbar } from "../components";
+import Image from 'next/image'
+import people from '../public/assets/images/people.png'
+
+const Gap = ({className}) => {
+  return (
+    <div className={className}></div>
+  )
+}
 
 export default function Home() {
+  const contentText = {
+    heading: "Let’s Build Something amazing with GPT-3 OpenAI",
+    subHeading: "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of."
+  }
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+    <div className='bg-gradient min-h-screen'>
+     <Navbar />
+      <article className="mx-auto max-w-screen-xl px-3">
+        <Gap className="md:block md:h-10 lg:h-8 hidden"/>
+        <section className="flex md:flex-row md:items-center  flex-col-reverse">
+          <div className="md:w-7/12 ">
+            <h1 className="xl:text-6xl lg:text-5xl text-[2rem] leading-9 font-bold text-gradient text-transparent">{contentText.heading}</h1>
+            <Gap className="h-4"/>
+            <p className="lg:text-xl w-11/12 lg:w-10/12 text-gray-300 leading-5 font-light">{contentText.subHeading}</p>
+            <Gap className="h-5"/>
+            <form>
+              <input type="text" className="bg-gray-800 lg:w-7/12 md:w-auto w-11/12 lg:py-4 lg:px-8 py-2 px-6 text-gray-300" placeholder="your email address"/>
+              <Gap className="h-3 md:hidden"/>
+              <button className="bg-[#c45719] lg:py-4 py-2 px-7 rounded-sm text-gray-300 hover:bg-red-500 transition capitalize font-semibold">get started</button>
+            </form>
+            <Gap className="h-7"/>
+            <div className="flex flex-col">
+              <div>
+                <Image 
+                  src={people}
+                  alt="user who used"
+                />
+              </div>
+              <p className="text-gray-300 font-light">1,600 people requested access a visit in last 24 hours</p>
+            </div>
+            
+          </div>
+          <div className="md:w-5/12 text-center">
+            <Image 
+              src='/assets/images/ai.png'
+              alt="artificial intellegen"
+              width={580}
+              height={580}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,[iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcsWNPPQAHCQKtmxt/5AAAAABJRU5ErkJggg==]"
+            />
+          </div>
+        </section>
+      </article>
     </div>
   )
 }
