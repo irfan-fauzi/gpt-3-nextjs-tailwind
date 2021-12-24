@@ -7,7 +7,7 @@ const ContentText = ({contentText}) => {
     <div className="md:w-7/12 ">
         <h1 className="xl:text-6xl xl:leading-tight lg:text-5xl text-[2rem] font-bold text-gradient text-transparent">{contentText.heading}</h1>
           <Gap className="h-6"/>
-            <p className="lg:font-normal lg:text-xl w-11/12 lg:w-10/12 text-gray-400 leading-5 font-light">{contentText.subHeading}</p>
+            <p className="lg:font-light lg:text-xl w-11/12 lg:w-10/12 text-gray-400 leading-5 font-light">{contentText.subHeading}</p>
             <Gap className="h-6"/>
             <form>
               <input type="text" className="bg-gray-800 lg:w-7/12 md:w-auto w-full lg:py-4 lg:px-8 py-2 px-6 text-gray-300 text-center md:text-left" placeholder="your email address"/>

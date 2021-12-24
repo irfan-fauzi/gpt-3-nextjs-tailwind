@@ -1,5 +1,4 @@
 export {default as AiFeatured} from './ai-featured/AiFeatured'
-export {default as BannerAccess} from './banner-access/BannerAccess'
 export {default as BannerGetStarted} from './benner-getstarted/BannerGetStarted'
 export {default as BlogFeatured} from './blog-featured/BlogFeatured'
 export {default as Features} from './features/Features'
