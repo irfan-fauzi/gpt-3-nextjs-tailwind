@@ -25,11 +25,10 @@ const Hero = () => {
         <ContentText contentText={contentText}/>
         <ImagePart />
       </section>
-      <Gap className="h-10"/>
+      <Gap className="h-20"/>
       <section className=''>
         <div className="md:flex-row flex-col flex gap-7 justify-center items-center">
-          {
-            images.map(el => (
+          {images.map(el => (
             <div className=''>
               <Image 
                 src={el}
@@ -40,6 +39,7 @@ const Hero = () => {
           }
         </div>
       </section>
+      <Gap className="h-20"/>
     </article>
   )
 }

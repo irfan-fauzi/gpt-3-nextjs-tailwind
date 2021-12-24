@@ -25,7 +25,7 @@ const Navbar = () => {
               {!showMenu && (<MenuDropDown menus={contentMenu}/>)}
             <ul className="lg:flex text-gray-300 hidden">
               {contentMenu.map(el => (
-                  <li key={el.text}><a href={el.url} className="hover:text-red-300 transition px-6 py-3 font-light">{el.text}</a></li>
+                  <li key={el.text}><a href={el.url} className="hover:text-red-300 transition px-6 py-3 font-semibold">{el.text}</a></li>
                 ))}
             </ul>
             </div>
