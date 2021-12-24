@@ -30,7 +30,14 @@ module.exports = {
           background: `linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%)`,
           backgroundClip: `text`,
           textFillColor: `transparent`
-        }
+        },
+        '.color-gradient': {
+          background: `linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);`
+        },
+        '.blue-gradient': {
+          background: `radial-gradient(circle at 20% 22%, rgba(4, 12, 24, 0.96) 0%, rgba(0, 40, 83, 1)  100%);`
+        },
+        
       }
       addUtilities(utilities)
     })

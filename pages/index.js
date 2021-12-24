@@ -1,5 +1,5 @@
 import { Gap } from "../components/atomic";
-import { AiFeatured, Features, Header, Hero } from "../components/sections/page-index";
+import { AiFeatured, BannerGetStarted, Features, Header, Hero } from "../components/sections/page-index";
 import WhatIs from "../components/sections/page-index/what-is-gpt/WhatIs";
 
 
@@ -14,8 +14,9 @@ export default function Home() {
       <Features />
       <Gap className="h-10 lg:h-[6rem]" />
       <AiFeatured />
-      <Gap className="h-10" />
-      
+      <Gap className="h-[9rem]" />
+      <BannerGetStarted />
+      <Gap className="h-10"/>
     </div>
   )
 }

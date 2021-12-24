@@ -19,12 +19,12 @@ const WhatIs = () => {
   return (
     <article className="">
     <div className="max-w-screen-xl mx-auto">
-      <div className="md:p-[3.5rem] p-7 bg-blue-900">
+      <div className="md:p-[3.5rem] p-7 blue-gradient">
         <WhatIsGpt />
         <Gap className="md:h-[8rem] h-[4rem]"/>
         <section className="flex md:justify-between md:items-center md:flex-row flex-col">
           <article>
-            <h3 className="text-gradient text-transparent text-3xl font-bold md:w-8/12">The possibilities are beyond your imagination</h3>
+            <h3 className="text-gradient text-transparent xl:text-4xl text-3xl font-bold md:w-8/12">The possibilities are beyond your imagination</h3>
           </article>
           <Gap className="h-8 lg:hidden block"/>
           <article>
