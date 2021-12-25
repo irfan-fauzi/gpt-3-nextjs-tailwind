@@ -10,7 +10,7 @@ const WhatIsGpt = () => {
          </div>
       </article>
       <article className="md:w-8/12">
-         <p className="text-gray-300 font-light text-lg md:w-11/12">We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by.</p>
+         <p className="text-gray-300 font-light text-lg md:w-11/12 md:font-medium">We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by.</p>
       </article>
     </section>
   )

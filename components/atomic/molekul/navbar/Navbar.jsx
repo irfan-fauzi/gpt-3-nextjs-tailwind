@@ -31,7 +31,7 @@ const Navbar = () => {
             </div>
             <div className="w-4/12 ">
               <div className="flex gap-2 justify-end">
-                <button className="lg:block text-white px-7 hidden">sign in</button>
+                <button className="lg:block text-white px-7 hidden capitalize">sign in</button>
                 <button className="lg:block bg-[#c45719] hover:bg-red-500 px-7 py-2 capitalize text-white hidden rounded-sm">sign up</button>
                 <RiMenu3Line color="#fff" size={30} className='hover:cursor-pointer lg:hidden' onClick={() => setShowMenu(!showMenu)}/>
               </div>

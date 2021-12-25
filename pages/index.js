@@ -6,7 +6,7 @@ import WhatIs from "../components/sections/page-index/what-is-gpt/WhatIs";
 export default function Home() {
 
   return (
-    <div className='bg-gradient min-h-screen'>
+    <div className='bg-[#040C18] min-h-screen'>
       <Header />
       <Hero />
       <WhatIs />

@@ -35,7 +35,7 @@ module.exports = {
           background: `linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);`
         },
         '.blue-gradient': {
-          background: `radial-gradient(circle at 20% 22%, rgba(4, 12, 24, 0.96) 0%, rgba(0, 40, 83, 1)  100%);`
+          background: `radial-gradient(circle at 3% 7%, rgba(12, 70, 157, 1) 0%, rgba(5, 45, 86, 1) 100%)`
         },
         
       }
