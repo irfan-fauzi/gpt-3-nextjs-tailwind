@@ -43,19 +43,20 @@ const BlogFeatured = () => {
      </article>
      <Gap className="h-[3.7rem]"/>
     
-     <article className='grid grid-blog gap-4'>
+     <article className='grid md:grid-blog gap-7'>
        
        {
          blogs.map(el => (
            
-          <div key={el.id} className={blogs.indexOf(el) === 0 ? 'md:grid-row-blog': ''}>
-            <img src={el.image} alt={el.title} />
-            
+          <div key={el.id} className={blogs.indexOf(el) === 0 ? 'md:grid-row-blog': ' '}>
+            <div className=''>
+              <img src={el.image} alt={el.title} />
+            </div>
             <article className='blue-gradient p-4'>
               <Gap className="h-5" />
               <p className='text-white'>{el.date}</p>
-              <h3 className='cursor-pointer text-gray-200 font-bold text-2xl'>{el.title}</h3>
-              <Gap className={blogs.indexOf(el) === 0 ? 'md:h-[18rem]' : 'h-5'} />
+              <h3 className='cursor-pointer text-gray-200 font-semibold lg:text-2xl text-lg'>{el.title}</h3>
+              <Gap className={blogs.indexOf(el) === 0 ? 'md:h-[20rem] h-5' : 'md:h-8 h-5'} />
               <button className='border px-4 py-2 text-gray-200 cursor-pointer'>read more..</button>
             </article>
           </div>
