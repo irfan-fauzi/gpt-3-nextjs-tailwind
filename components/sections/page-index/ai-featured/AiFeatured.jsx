@@ -11,8 +11,10 @@ const AiFeatured = () => {
             <Image 
               src={woman}
               alt="woman"
-              width={450}
-              height={450}
+              width={600}
+              height={600}
+             
+              
             />
           </div>
           <article className="lg:w-6/12">
