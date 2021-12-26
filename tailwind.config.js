@@ -44,7 +44,7 @@ module.exports = {
           gridTemplateColumns: `repeat(auto-fit, minmax(360px, 1fr))`
         },
         '.grid-footer': {
-          gridTemplateColumns: `repeat(auto-fit, minmax(400px, 1fr))`
+          gridTemplateColumns: `repeat(auto-fit, minmax(340px, 1fr))`
         },
         '.grid-row-blog': {
           gridRow : `1/3`

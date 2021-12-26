@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     
     <section className='footer-gradient '>
-      <div className='max-w-screen-xl mx-auto xl:px-0 px-5'>
+      <div className='max-w-screen-xl mx-auto px-5'>
       <Gap className="h-[5rem]" />
       <div className='max-w-screen-md mx-auto'>
         <h3 className='text-center lg:text-5xl text-2xl text-gradient text-transparent font-bold'>Do you want to step in to the future before others
@@ -22,19 +22,19 @@ const Footer = () => {
             <p className='text-2xl font-bold text-gray-300'>GPT-3</p>
             <Gap className="h-5" />
             <p className='text-gray-300 font-light'>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
-            <Gap className="h-5" /> 
+            <Gap className="md:h-4 lg:h-10" /> 
             <p className='text-gray-300 font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, tempora? Lorem ipsum dolor sit amet.</p>
           </div>
           <div className=''>
             <div className='flex text-gray-300  justify-between'>
-              <ul className='flex flex-col gap-6'>
+              <ul className='flex flex-col gap-7 lg:gap-6 xl:gap-8'>
                 <p className='font-bold'>Links</p>
                 <li>Overons</li>
                 <li>Social media</li>
                 <li>Counters</li>
                 <li>Contacts</li>
               </ul>
-              <ul className='flex flex-col gap-6'>
+              <ul className='flex flex-col gap-7 lg:gap-6 xl:gap-8'>
                 <p className='font-bold'>Company</p>
                 <li>Tearms & conditions</li>
                 <li>Privacy Policy</li>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='xl:justify-self-center'>
-            <ul className='flex flex-col gap-6 text-gray-200'>
+            <ul className='flex flex-col gap-7 lg:gap-6 xl:gap-8 text-gray-200'>
                 <p className='font-bold'>Get is touch</p>
                 <li>Crechterwoord K12 182 DK Alknjkcb</li>
                 <li>085-132567</li>
