@@ -14,6 +14,7 @@ const Navbar = () => {
     {url: "#", text: "Case Studies"},
     {url: "#", text: "Library"}
   ]
+  
   return (
     <nav className="pt-10 ">
         <div className="mx-auto max-w-screen-xl px-3">
@@ -33,7 +34,7 @@ const Navbar = () => {
               <div className="flex gap-2 justify-end">
                 <button className="lg:block text-white px-7 hidden capitalize">sign in</button>
                 <button className="lg:block bg-[#c45719] hover:bg-red-500 px-7 py-2 capitalize text-white hidden rounded-sm">sign up</button>
-                <RiMenu3Line color="#fff" size={30} className='hover:cursor-pointer lg:hidden' onClick={() => setShowMenu(!showMenu)}/>
+                <button className='lg:hidden border cursor-pointer relative z-10' onClick={() => setShowMenu(!showMenu)}><RiMenu3Line size={35} color='#fff'/></button>
               </div>
               
             </div>

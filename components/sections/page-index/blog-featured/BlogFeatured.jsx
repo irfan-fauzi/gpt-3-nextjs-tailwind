@@ -1,7 +1,6 @@
-import React from 'react'
-import { Gap } from '../../../atomic'
 import Image from 'next/image'
-import imgBlog from '../../../../public/assets/images/blog01.png'
+import { Gap } from '../../../atomic'
+
 
 const BlogFeatured = () => {
   const blogs = [
@@ -49,9 +48,9 @@ const BlogFeatured = () => {
          blogs.map(el => (
            
           <div key={el.id} className={blogs.indexOf(el) === 0 ? 'md:grid-row-blog': ' '}>
-            <div className=''>
-              <img src={el.image} alt={el.title} />
-            </div>
+            <picture>
+              <img src={el.image} alt={el.title} loading='lazy'/>
+            </picture>
             <article className='blue-gradient p-4'>
               <Gap className="h-5" />
               <p className='text-white'>{el.date}</p>

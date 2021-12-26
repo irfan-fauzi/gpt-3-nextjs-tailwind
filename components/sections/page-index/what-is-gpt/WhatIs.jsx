@@ -35,7 +35,7 @@ const WhatIs = () => {
         <section className="flex lg:flex-row flex-col gap-9 content-between">
           {
             products.map(el => (
-              <article className="lg:w-4/12">
+              <article key={Math.random()} className="lg:w-4/12">
                 <h3 className="font-black text-transparent text-gradient">_____</h3>
                 <h3 className="cursor-pointer text-2xl text-gray-300 font-semibold">{el.title}</h3>
                 <Gap className="h-10"/>

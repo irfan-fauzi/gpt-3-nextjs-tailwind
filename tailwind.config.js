@@ -37,8 +37,14 @@ module.exports = {
         '.blue-gradient': {
           background: `radial-gradient(circle at 3% 7%, rgba(12, 70, 157, 1) 0%, rgba(5, 45, 86, 1) 100%)`
         },
+        '.footer-gradient': {
+          background: `radial-gradient(circle at 5% 7%, rgba(3, 25, 56, 1) 0%, rgba(5, 45, 86, 1) 100%);`
+        },
         '.grid-blog': {
           gridTemplateColumns: `repeat(auto-fit, minmax(360px, 1fr))`
+        },
+        '.grid-footer': {
+          gridTemplateColumns: `repeat(auto-fit, minmax(400px, 1fr))`
         },
         '.grid-row-blog': {
           gridRow : `1/3`
