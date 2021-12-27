@@ -49,7 +49,18 @@ module.exports = {
         '.grid-row-blog': {
           gridRow : `1/3`
         },
-        
+        '.container-image': {
+          width: `100%`,
+          'div' : {
+            position: `unset !important`
+          } 
+        },
+        '.inside-img' : {
+          objectFit: `contain`,
+          width: `100%`,
+          position: `relative !important`,
+          height: `unset !important`
+        }
         
       }
       addUtilities(utilities)
