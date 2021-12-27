@@ -21,9 +21,10 @@ const WhatIs = () => {
     <div className="max-w-screen-xl mx-auto">
       <div className="md:p-[3.5rem] p-7 blue-gradient">
         <WhatIsGpt />
-        <Gap className="md:h-[6rem] h-[4rem]"/>
+        <Gap className="md:h-[6rem] h-[2rem]"/>
         <section className="flex md:justify-between md:items-center md:flex-row flex-col">
           <article>
+            
             <h3 className="text-gradient text-transparent xl:text-4xl text-3xl font-bold md:w-8/12">The possibilities are beyond your imagination</h3>
           </article>
           <Gap className="h-8 lg:hidden block"/>
@@ -38,7 +39,7 @@ const WhatIs = () => {
               <article key={Math.random()} className="lg:w-4/12">
                 <h3 className="font-black text-transparent text-gradient">_____</h3>
                 <h3 className="cursor-pointer text-2xl text-gray-300 font-semibold">{el.title}</h3>
-                <Gap className="h-10"/>
+                <Gap className="lg:h-10 h-3"/>
                 <p className="text-gray-300 ">{el.subTitle}</p>
             </article>
             ))

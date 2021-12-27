@@ -26,7 +26,7 @@ const Features = () => {
           <section className="lg:w-6/12">
             <h3 className="lg:text-4xl text-2xl font-bold text-transparent  text-gradient lg:w-11/12">The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.</h3>
             <Gap className="h-10" />
-            <button className="border px-4 py-4 border-gray-500 text-transparent text-gradient font-semibold">Request Early Access to Get Started</button>
+            <button className="border px-4 py-3 lg:p-4 border-gray-500 text-transparent text-gradient md:font-semibold cursor-pointer">Request Early Access to Get Started</button>
           </section>
           <Gap className="h-10 lg:hidden block" />
           <section className="lg:w-8/12  flex flex-col gap-8">
