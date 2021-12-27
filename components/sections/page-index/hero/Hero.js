@@ -21,10 +21,11 @@ const Hero = () => {
   return (
     <article className="mx-auto max-w-screen-xl px-3">
       <Gap className="md:block md:h-10 lg:h-10 hidden"/>
-      <section className="flex md:flex-row md:items-center  flex-col-reverse">
+      <section className="flex md:items-center flex-col md:flex-row">
         <ContentText contentText={contentText}/>
         <ImagePart />
       </section>
+      
       <Gap className="h-20"/>
       <section className=''>
         <div className="md:flex-row flex-col flex gap-7 justify-center items-center">
