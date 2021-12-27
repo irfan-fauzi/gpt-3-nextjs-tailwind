@@ -48,7 +48,8 @@ module.exports = {
         },
         '.grid-row-blog': {
           gridRow : `1/3`
-        }
+        },
+        
         
       }
       addUtilities(utilities)

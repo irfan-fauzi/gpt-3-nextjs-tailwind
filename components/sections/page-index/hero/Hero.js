@@ -19,7 +19,7 @@ const Hero = () => {
     subHeading: "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of."
   }
   return (
-    <article className="mx-auto max-w-screen-xl px-3">
+    <article className="mx-auto max-w-screen-xl px-3" id='hero'>
       <Gap className="md:block md:h-10 lg:h-10 hidden"/>
       <section className="flex md:items-center flex-col md:flex-row">
         <ContentText contentText={contentText}/>
