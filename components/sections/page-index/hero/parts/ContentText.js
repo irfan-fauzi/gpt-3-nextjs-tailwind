@@ -5,7 +5,7 @@ import Image from 'next/image'
 const ContentText = ({contentText}) => {
   return (
     <div className="md:w-7/12 ">
-        <Gap className="h-10 md:h-0" />
+        <Gap className="h-[2rem] " />
         <h1 className="xl:text-6xl xl:leading-tight lg:text-5xl text-[2rem] leading-10 md:leading-none font-bold text-gradient text-transparent">{contentText.heading}</h1>
           <Gap className="h-6"/>
             <p className="lg:font-light lg:text-xl w-11/12 lg:w-10/12 text-gray-400 leading-5 font-light">{contentText.subHeading}</p>

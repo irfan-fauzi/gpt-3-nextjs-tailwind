@@ -15,12 +15,13 @@ const Navbar = () => {
     {url: "#", text: "Library"}
   ]
   
+  
   return (
     <nav className="pt-10 ">
         <div className="mx-auto max-w-screen-xl px-3">
           <div className="flex  items-center">
             <div className="w-1/12 ">
-              <h1 className="text-2xl font-bold text-gray-400">GPT-3</h1>
+              <h1 className="text-2xl font-bold text-gray-300">GPT-3</h1>
             </div>
             <div className="w-7/12 ">
               {!showMenu && (<MenuDropDown menus={contentMenu}/>)}
@@ -34,7 +35,7 @@ const Navbar = () => {
               <div className="flex gap-2 justify-end">
                 <button className="lg:block text-white px-7 hidden capitalize">sign in</button>
                 <button className="lg:block bg-[#c45719] hover:bg-red-500 px-7 py-2 capitalize text-white hidden rounded-sm">sign up</button>
-                <button className='lg:hidden border cursor-pointer relative z-10' onClick={() => setShowMenu(!showMenu)}><RiMenu3Line size={35} color='#fff'/></button>
+                <button className='lg:hidden border-gray-50 cursor-pointer fixed lg:static top-9 bg-gradient p-1 z-40' onClick={() => setShowMenu(!showMenu)}>{showMenu ? (<RiMenu3Line color='#fff' size={35} />) : (<RiCloseLine color='#fff' size={35}/>)}</button>
               </div>
               
             </div>

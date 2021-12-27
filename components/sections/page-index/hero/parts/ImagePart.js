@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const ImagePart = () => {
   return (
-    <div className="md:w-7/12 text-center relative md:top-[-40px] top-10">
+    <div className="md:w-7/12 text-center z-[1] relative md:top-[-40px] top-10">
     <Image 
       src='/assets/images/ai.png'
       alt="artificial intellegen"
