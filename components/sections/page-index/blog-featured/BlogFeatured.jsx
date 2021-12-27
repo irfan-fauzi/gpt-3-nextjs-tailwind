@@ -1,39 +1,35 @@
 import { Gap } from '../../../atomic'
-import blog1 from '../../../../public/assets/images/blog01.png'
-import blog2 from '../../../../public/assets/images/blog02.png'
-import blog3 from '../../../../public/assets/images/blog03.png'
-import blog4 from '../../../../public/assets/images/blog04.png'
-import blog5 from '../../../../public/assets/images/blog05.png'
+
 
 const BlogFeatured = () => {
   const blogs = [
     {
       id: 1,
-      image: blog1,
+      image: '/assets/images/blog01.png',
       date: 'Sept 26, 2021',
       title: "GPT-3 and Open  AI is the future. Let us exlore how it is?"
     },
     {
       id: 2,
-      image: blog2,
+      image: '/assets/images/blog02.png',
       date: 'Sept 26, 2021',
       title: "GPT-3 and Open  AI is the future. Let us exlore how it is?"
     },
     {
       id: 3,
-      image: blog3,
+      image: '/assets/images/blog03.png',
       date: 'Sept 26, 2021',
       title: "GPT-3 and Open  AI is the future. Let us exlore how it is?"
     },
     {
       id: 4,
-      image: blog4,
+      image: '/assets/images/blog04.png',
       date: 'Sept 26, 2021',
       title: "GPT-3 and Open  AI is the future. Let us exlore how it is?"
     },
     {
       id: 5,
-      image: blog5,
+      image: '/assets/images/blog05.png',
       date: 'Sept 26, 2021',
       title: "GPT-3 and Open  AI is the future. Let us exlore how it is?"
     }
