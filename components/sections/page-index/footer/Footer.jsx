@@ -1,6 +1,7 @@
 import React from 'react'
 import { Gap } from '../../../atomic'
-
+import {GrFacebook} from 'react-icons/gr'
+import {BsInstagram, BsFacebook, BsTwitter} from 'react-icons/bs'
 const Footer = () => {
   return (
     
@@ -17,12 +18,12 @@ const Footer = () => {
       </div>
       <Gap className="lg:h-[8rem] h-[5rem]" />
       <footer>
-        <div className='grid md:grid-footer gap-10'>
+        <div className='grid md:grid-footer gap-10 font-light'>
           <div className=''>
             <p className='text-2xl font-bold text-gray-300'>GPT-3</p>
             <Gap className="h-5" />
             <p className='text-gray-300 font-light'>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
-            <Gap className="md:h-4 lg:h-10" /> 
+            <Gap className="md:h-4 lg:h-10 h-5" /> 
             <p className='text-gray-300 font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, tempora? Lorem ipsum dolor sit amet.</p>
           </div>
           <div className=''>
@@ -45,15 +46,18 @@ const Footer = () => {
           <div className='xl:justify-self-center'>
             <ul className='flex flex-col gap-7 lg:gap-6 xl:gap-8 text-gray-200'>
                 <p className='font-bold'>Get is touch</p>
-                <li>Crechterwoord K12 182 DK Alknjkcb</li>
-                <li>085-132567</li>
-                <li>info@payme.net</li>
+                <li className='flex items-center gap-3 cursor-pointer'><BsFacebook size={30}/>fb/gpt-3-indonesia</li>
+                <li className='flex items-center gap-3 cursor-pointer'><BsInstagram size={30}/>@gpt3indonesia</li>
+                <li className='flex items-center gap-3 cursor-pointer'><BsTwitter size={30}/>@gpt3indo</li>
               </ul>
           </div>
         </div>
-      <Gap className="lg:h-[5rem] h-10" /> 
+      <Gap className="lg:h-[5rem] h-10" />
+       
     </footer>
+    
     </div>
+    
     </section>
     
     
