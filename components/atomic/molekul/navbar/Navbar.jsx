@@ -20,8 +20,8 @@ const Navbar = () => {
     <nav className="pt-10 ">
         <div className="mx-auto max-w-screen-xl px-3">
           <div className="flex  items-center">
-            <div className="w-1/12 ">
-              <h1 className="text-2xl font-bold text-gray-300">GPT-3</h1>
+            <div className="w-4/12 lg:w-1/12">
+              <a href="#"><p className="text-2xl font-bold text-gray-100">GPT-3</p></a>
             </div>
             <div className="w-7/12 ">
               {!showMenu && (<MenuDropDown menus={contentMenu}/>)}

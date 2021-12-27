@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <article className="mx-auto max-w-screen-xl px-3" id='hero'>
       <Gap className="md:block md:h-10 lg:h-10 hidden"/>
-      <section className="flex md:items-center flex-col md:flex-row">
+      <section className="flex md:items-center flex-col-reverse md:flex-row">
         <ContentText contentText={contentText}/>
         <ImagePart />
       </section>
@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="md:flex-row flex-col flex gap-7 justify-center items-center">
           {images.map(el => (
             <div key={Math.random()}>
-              <Image 
+              <Image
                 src={el}
                 alt='google'
               />
