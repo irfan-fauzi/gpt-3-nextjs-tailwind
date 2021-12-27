@@ -18,7 +18,7 @@ export default function Home() {
       <BannerGetStarted />
       <Gap className="h-[3.7rem]"/>
       <BlogFeatured />
-      <Gap className="h-[7rem]"/>
+      <Gap className="md:h-[7rem] h-10"/>
       <Footer />
     </div>
   )
