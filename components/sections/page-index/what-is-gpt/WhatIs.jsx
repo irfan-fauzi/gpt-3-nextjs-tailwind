@@ -1,5 +1,5 @@
-import { WhatIsGpt } from ".."
 import { Gap } from "../../../atomic"
+import WhatIsGpt from "./WhatIsGpt"
 
 const WhatIs = () => {
   const products = [
