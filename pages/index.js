@@ -9,24 +9,28 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   
-  const [presentageBar, setPresentageBar] = useState(0)
+  const [presentageBar, setPresentageBar] = useState()
  
+  const scrollContainer = () => {
+    return document.documentElement || document.body
+  }
   const showProgressBar = () => {
-    const scrolledPercentage = (window.scrollTop /
-      (window.scrollHeight - window.clientHeight)) * 100;
+    const scrolledPercentage = (scrollContainer().scrollTop /
+      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) * 100;
     setPresentageBar(scrolledPercentage)
   }
 
   useEffect(() => { 
-    document.addEventListener('scroll', showProgressBar)
+    window.addEventListener('scroll', showProgressBar)
+    return () => {
+      window.removeEventListener('scroll', showProgressBar)
+    }
   },[])
-
-  console.log(presentageBar)
 
   return (
     
     <div className='bg-[#040C18] min-h-screen'>
-      <div id="progress-bar" className="h-1 bg-blue-400 fixed top-0 left-0"></div>
+      <div id="progress-bar" style={{width: `${presentageBar}%`}} className="h-1 bg-blue-400 fixed top-0 left-0 z-[300]"></div>
       <Header />
       <Hero />
       <WhatIs />
