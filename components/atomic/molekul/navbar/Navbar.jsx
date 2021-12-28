@@ -35,7 +35,7 @@ const Navbar = () => {
               <div className="flex gap-2 justify-end">
                 <button className="lg:block text-white px-7 hidden capitalize">sign in</button>
                 <button className="lg:block bg-[#c45719] hover:bg-red-500 px-7 py-2 capitalize text-white hidden rounded-sm">sign up</button>
-                <button className='lg:hidden border-gray-50 cursor-pointer fixed lg:static top-9 bg-gradient p-1 z-40' onClick={() => setShowMenu(!showMenu)}>{showMenu ? (<RiMenu3Line color='#fff' size={35} />) : (<RiCloseLine color='#fff' size={35}/>)}</button>
+                <button className='lg:hidden border-gray-50 cursor-pointer  lg:static top-9 bg-gradient p-1 z-40' onClick={() => setShowMenu(!showMenu)}>{showMenu ? (<RiMenu3Line color='#fff' size={35} />) : (<RiCloseLine color='#fff' size={35}/>)}</button>
               </div>
               
             </div>
