@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import { BtnScrollToTop, Gap, ProgressBarPage } from "../components/atomic";
-import Container from "../components/atomic/molekul/layout/Container";
-import Layout from "../components/atomic/molekul/layout/Layout";
-import { AiFeatured, BannerGetStarted, BlogFeatured, Features, Hero, WhatIs } from "../components/sections/page-index";
+import { BtnScrollToTop, Container, Layout, ProgressBarPage } from "../components/atomic";
+
+import MainSections from '../components/sections/mainsections/MainSections';
 
 export default function Home() {
   
@@ -11,20 +10,10 @@ export default function Home() {
     <Layout>
       <Container>
         <Head>
-          <title>GPT-3 Indonesia</title>
+          <title>GPT-3 Indonesia </title>
         </Head>
         <ProgressBarPage />        
-        <Hero />
-        <WhatIs />
-        <Gap className="lg:h-[5rem]" />
-        <Features />
-        <Gap className="h-10 lg:h-[6rem]" />
-        <AiFeatured />
-        <Gap className="md:h-[7rem] h-[3rem]" />
-        <BannerGetStarted />
-        <Gap className="h-[3.7rem]"/>
-        <BlogFeatured />
-        <Gap className="md:h-[7rem] h-10"/>
+        <MainSections />
         
         <BtnScrollToTop />
       </Container>
