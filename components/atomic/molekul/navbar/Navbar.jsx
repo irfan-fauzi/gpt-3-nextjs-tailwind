@@ -4,8 +4,8 @@ import MenuDropDown from './Dropdown'
 
 const Navbar = () => {  
   const [showMenu, setShowMenu] = useState(false)
-  useEffect(() => {
-    setShowMenu(!false)
+  useEffect(() => { 
+    setShowMenu(!showMenu)
   }, []) 
   const contentMenu = [
     {url: "#", text: "Home"},
@@ -35,7 +35,7 @@ const Navbar = () => {
               <div className="flex gap-2 justify-end">
                 <button className="lg:block text-white px-7 hidden capitalize">sign in</button>
                 <button className="lg:block bg-[#c45719] hover:bg-red-500 px-10 py-3 capitalize text-white hidden rounded-sm font-bold">sign up</button>
-                <button className='lg:hidden border-gray-50 cursor-pointer  lg:static top-9 bg-gradient p-1 z-40' onClick={() => setShowMenu(!showMenu)}>{showMenu ? (<RiMenu3Line color='#fff' size={35} />) : (<RiCloseLine color='#fff' size={35}/>)}</button>
+                <button className={`${!showMenu ? 'fixed z-[9999]': 'static'} lg:hidden border-gray-50 cursor-pointer lg:static top-9 bg-gradient p-1 z-40`} onClick={() => setShowMenu(!showMenu)}>{showMenu ? (<RiMenu3Line color='#fff' size={35} />) : (<RiCloseLine color='#fff' size={35}/>)}</button>
               </div>
               
             </div>
