@@ -7,9 +7,9 @@ const ContentText = ({contentText}) => {
   return (
     <div className="md:w-7/12 ">
         <Gap className="h-[2rem] " />
-        <h1 className="xl:text-6xl xl:leading-tight lg:text-5xl text-[2.1rem] leading-10 md:leading-none lg:font-bold font-extrabold text-gradient text-transparent">{contentText.heading}</h1>
+        <h1 className="xl:text-6xl xl:leading-tight lg:text-5xl text-[1.8rem] leading-10 md:leading-none lg:font-bold font-extrabold text-gradient text-transparent">{contentText.heading}</h1>
           <Gap className="h-6"/>
-            <p className="lg:font-light lg:text-xl w-full lg:w-10/12 text-gray-200 leading-6 font-light">{contentText.subHeading}</p>
+            <p className="lg:font-light lg:text-xl w-full lg:w-10/12 text-gray-300 leading-6 font-light">{contentText.subHeading}</p>
             <Gap className="h-6"/>
             <form>
               <input type="text" className="bg-[#052D56] lg:w-7/12 md:w-auto w-full lg:py-4 lg:px-8 md:py-2 py-4 px-6 text-gray-300 text-left md:text-left" placeholder="your email address"/>
