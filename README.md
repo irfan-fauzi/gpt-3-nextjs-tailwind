@@ -4,7 +4,7 @@ Landingpage / Comapny profile web serderhana u
 
 <p align="center">
 <br>
-   <img src="https://i.ibb.co/HDfF60C/mockup3.png" border="0" width="350">
+   <img src="https://i.ibb.co/QYDWZzT/mockup2.png" border="0" width="350">
 </p>
 
 ## Setup
