@@ -9,7 +9,7 @@ const ImagePart = () => {
       width={600}
       height={600}
       placeholder="blur"
-      blurDataURL="data:image/png;base64,[iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcsWNPPQAHCQKtmxt/5AAAAABJRU5ErkJggg==]"
+      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN89/adDAAIgQLnKp2BqQAAAABJRU5ErkJggg=="
     />
   </div>
   )

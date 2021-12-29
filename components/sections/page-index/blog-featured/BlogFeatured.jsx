@@ -53,7 +53,8 @@ const BlogFeatured = () => {
                 alt={el.title} 
                 layout='fill'
                 className='inside-img'
-                
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN89/adDAAIgQLnKp2BqQAAAABJRU5ErkJggg=="
               />
             </div>
             <article className='blue-gradient p-4'>
