@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import { BtnScrollToTop, Container, Layout, ProgressBarPage } from "../components/atomic";
-
 import MainSections from '../components/sections/mainsections/MainSections';
 
 export default function Home() {
   
   return (
-    
     <Layout>
       <Container>
         <Head>
@@ -14,7 +12,6 @@ export default function Home() {
         </Head>
         <ProgressBarPage />        
         <MainSections />
-        
         <BtnScrollToTop />
       </Container>
     </Layout>
